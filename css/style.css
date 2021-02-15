@@ -1,0 +1,215 @@
+/* General rules */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+ul li a {
+  color: #a1a1a1;
+}
+
+a {
+  text-decoration: none;
+}
+/* End General rules */
+
+/* Start main */
+
+main {
+  padding: 60px 0 70px 200px;
+  background-color: #14141c;
+}
+
+main p {
+  font-size: .7rem;
+  color: #a1a1a1;
+}
+/* End main */
+
+
+/* Start Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #222323;
+  z-index: 1000;
+}
+/* End footer */
+
+
+/* End general rules */
+
+
+/* Start header */
+.nav-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Logo */
+.logo-container {
+  line-height: 80px;
+}
+#logo {
+  height: 35px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+/* Home nav */
+.home ul {
+  list-style: none;
+}
+.home ul li {
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+.home ul li:first-child {
+  border-left: 3px solid white;
+}
+.home ul li:first-child a {
+  color: #ccc;
+}
+.home ul li:not(:first-child) {
+  border-left: 3px solid transparent;
+}
+.home ul img {
+  height: 80%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.playlist {
+  padding-left: 13px;
+}
+.playlist ul li {
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+.playlist ul li div {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  background-color: #aaa;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.playlist ul li div span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  color: black;
+}
+
+/* Section Upgrade */
+.upgrade {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: #0c0b0e;
+  z-index: 500;
+  padding-right: 5px;
+}
+
+.upgrade-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  float: right;
+}
+.upgrade-container a {
+  padding: 0.6em 1.3em;
+  color: white;
+  border-radius: 1.5em;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+/* End home nav */
+
+
+/* SECTION MAIN */
+.wrapper-main {
+  padding: 20px;
+}
+.nav-main {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.nav-main ul li {
+  display: inline-block;
+}
+.nav-main ul li:not(:last-child) {
+  margin-right: 2vw;
+}
+.nav-main ul li a {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: .8rem;
+}
+
+/*Section recently played*/
+.content {
+  display: flex;
+  margin: 20px 0;
+}
+.square-family {
+  flex-basis: 15%;
+}
+.square-family:not(:last-child) {
+  margin-right: 20px;
+}
+.square-family img {
+  width: 100%;
+}
+.caption {
+  padding: 10px;
+  text-align: center;
+}
+.caption p {
+  padding: 10px;
+}
+
+/*Section suggestion*/
+.suggestion p {
+  padding: 10px 0;
+}
+
+
+/* END SECTION MAIN */
