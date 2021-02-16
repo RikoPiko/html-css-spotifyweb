@@ -8,6 +8,7 @@
 
 body {
   font-family:  Helvetica, Arial, sans-serif;
+  background-color: #14141c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,7 +28,7 @@ a {
 
 
 main {
-  padding: 60px 0 70px 200px;
+  padding: 70px 0 70px 200px;
   background-color: #14141c;
 }
 
@@ -191,7 +192,7 @@ footer i {
 .install-app h5, .install-app h4 {
   display: inline-block;
 }
-.install a {
+.install a, .install h5 {
   color: #a1a1a1;
 }
 .username {
@@ -210,15 +211,16 @@ footer i {
   padding: 20px;
 }
 .nav-main {
-  width: 100%;
-  height: 50px;
-  text-align: center;
+  margin-bottom: 20px;
 }
+.nav-main ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .nav-main ul li {
-  display: inline-block;
-}
-.nav-main ul li:not(:last-child) {
-  margin-right: 2vw;
+  padding: 10px;
 }
 .nav-main ul li a {
   text-transform: uppercase;
@@ -237,7 +239,7 @@ footer i {
 }
 .square-family:not(:last-child),
 .circle-family:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 .square-family img,
 .circle-family img {
@@ -256,6 +258,8 @@ footer i {
 
 
 /* FOOTER */
+
+/* current title section */
 .current-title {
   display: flex;
   align-items: center;
@@ -272,7 +276,7 @@ footer i {
   margin-left: 10px;
 }
 .current-title-icons {
-  margin-left: 20px;
+  margin-left: 35px;
 }
 .current-title-icons i {
   font-size: .8rem;
@@ -281,12 +285,13 @@ footer i {
 .current-title-icons i:first-child {
   margin-right: 10px;
 }
-
 .current-title, .actions {
-  flex-basis: 20%;
+  flex-basis: 30%;
 }
+
+/* playing section */
 .playing {
-  flex-basis: 60%;
+  flex-basis: 40%;
   text-align: center;
 }
 .playing i {
@@ -297,10 +302,9 @@ footer i {
 .playing i:nth-child(3) {
   font-size: 1.3rem;
 }
-
 .time-bar {
   display: inline-block;
-  width: 400px;
+  width: 70%;
   margin: 0 auto;
   height: 3px;
   background-color: #a1a1a1;
@@ -322,11 +326,16 @@ footer i {
 }
 .bar-container::before {
   content: "0:25";
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .bar-container::after {
   content: "4:35";
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+/* actions section */
+.actions-container {
+  float: right;
 }
 .actions-icons {
   display: inline-block;
@@ -341,7 +350,7 @@ footer i {
 }
 .volume-bar {
   display: inline-block;
-  width: 150px;
+  width: 100px;
   height: 2px;
   background-color: #a1a1a1;
   vertical-align: middle;
@@ -354,3 +363,19 @@ footer i {
   border-radius: 1px;
 }
 /* END FOOTER */
+@media screen and (max-width: 992px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .square-family, .circle-family {
+    width: 22%;
+  }
+  .square-family:not(:last-child),
+  .circle-family:not(:last-child) {
+    margin-right: 4%;
+  }
+  .square-family:nth-child(4n+4),
+  .circle-family:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
