@@ -78,6 +78,7 @@ footer i {
   background-color: black;
   font-size: 0.9rem;
   font-weight: 600;
+  padding-bottom: 70px;
 }
 
 /* Logo */
@@ -92,14 +93,14 @@ footer i {
 
 
 /* Home nav */
-.home ul {
-  list-style: none;
-}
-.home ul li {
-  height: 30px;
+.nav-home ul li {
   margin-bottom: 10px;
   padding-left: 10px;
-  line-height: 30px;
+  line-height: 20px;
+  font-size: .7rem;
+}
+.nav-home ul li a {
+  vertical-align: middle;
 }
 .home ul li:first-child {
   border-left: 3px solid white;
@@ -111,27 +112,23 @@ footer i {
   border-left: 3px solid transparent;
 }
 .home ul img {
-  height: 80%;
+  height: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
 
-.playlist {
+.playlist h4 {
+  margin-bottom: 10px;
   padding-left: 13px;
 }
-.playlist ul li {
-  height: 30px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  line-height: 30px;
-}
+
 .playlist ul li div {
   position: relative;
   display: inline-block;
-  height: 100%;
+  height: 30px;
   width: 30px;
   background-color: #aaa;
-  margin-right: 5px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 .playlist ul li div span {
@@ -170,6 +167,40 @@ footer i {
   border: 1px solid white;
   text-transform: uppercase;
   font-size: 0.7rem;
+}
+
+/* Section installa app */
+.install-app {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  color: #a1a1a1;
+  padding: 10px;
+  background-color: black;
+}
+.install {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a1a1a1;
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+.install i {
+  vertical-align: middle;
+}
+.install-app h5, .install-app h4 {
+  display: inline-block;
+}
+.install a {
+  color: #a1a1a1;
+}
+.username {
+  line-height: 2rem;
+}
+.username i {
+  font-size: 2rem;
+  vertical-align: middle;
+  color: #a1a1a1;
 }
 /* End home nav */
 
