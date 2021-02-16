@@ -70,6 +70,9 @@ footer i {
 
 
 /* Start header */
+.nav-home-xs {
+  display: none;
+}
 .nav-home {
   position: fixed;
   top: 0;
@@ -363,7 +366,7 @@ footer i {
   border-radius: 1px;
 }
 /* END FOOTER */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
   .content {
     flex-wrap: wrap;
   }
@@ -377,5 +380,144 @@ footer i {
   .square-family:nth-child(4n+4),
   .circle-family:nth-child(4n+4) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .square-family, .circle-family {
+    width: 49%;
+  }
+  .square-family,
+  .circle-family {
+    margin-right: 2%;
+  }
+  .square-family:nth-child(2n+2),
+  .circle-family:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+
+  /* NAV HEADER */
+  .nav-home {
+    display: none;
+  }
+  .nav-home-xs {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30px;
+    background-color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .nav-home-xs ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-home-xs ul li {
+    padding: 5px 0;
+  }
+  .nav-home-xs ul i{
+    font-size: 20px;
+    color: white;
+  }
+  .nav-home-xs ul img {
+    width: 20px;
+  }
+  /* UPGRADE SECTION */
+  .upgrade {
+    width: calc(100% - 40px);
+    height: 70px;
+  }
+  .install-app {
+    padding: 0px;
+  }
+  .install {
+    border-bottom: none;
+  }
+  .username i {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  /* MAIN SECTION */
+  main {
+    padding-left: 40px;
+  }
+  .wrapper-main {
+    padding: 10px;
+  }
+
+  .nav-main ul li {
+    padding: 5px;
+  }
+  .nav-main ul li a {
+    font-size: .5rem;
+  }
+
+  /* FOOTER */
+  footer > section {
+    padding: 0 5px;
+  }
+
+  /* current section */
+  .current-title img {
+    width: 30px;
+  }
+  .current-caption {
+    margin-left: 5px;
+  }
+  .current-title-icons {
+    margin-left: 10px;
+  }
+  .current-title-icons i {
+    font-size: .7rem;
+  }
+  .current-title-icons i:first-child {
+    margin-right: 0;
+  }
+  .current-title, .actions {
+    flex-basis: 20%;
+  }
+
+  /* playing section */
+  .playing {
+    flex-basis: 60%;
+  }
+  .playing i {
+    font-size: .6rem;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  .playing i:nth-child(3) {
+    font-size: 1rem;
+  }
+  .time-bar {
+    width: 50%;
+  }
+
+  /* actions section */
+  .actions-icons {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .actions-icons i {
+    font-size: .5rem;
+  }
+  .actions-icons i:nth-child(2) {
+    margin: 0 5px;
+  }
+  .volume-bar {
+    width: 50px;
   }
 }
