@@ -11,6 +11,12 @@ body {
   background-color: #14141c;
 }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: white;
 }
@@ -75,6 +81,8 @@ footer i {
 }
 .nav-home {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 200px;
@@ -106,6 +114,7 @@ footer i {
 .nav-home ul li a {
   vertical-align: middle;
 }
+
 .home ul li:first-child {
   border-left: 3px solid white;
 }
@@ -120,12 +129,18 @@ footer i {
   vertical-align: middle;
   margin-right: 5px;
 }
-
+.playlist {
+  flex-grow: 2;
+}
 .playlist h4 {
   margin-bottom: 10px;
   padding-left: 13px;
 }
 
+.playlist ul {
+  height: 255px;
+  overflow: auto;
+}
 .playlist ul li div {
   position: relative;
   display: inline-block;
@@ -175,9 +190,6 @@ footer i {
 
 /* Section installa app */
 .install-app {
-  position: absolute;
-  bottom: 70px;
-  left: 0;
   width: 100%;
   color: #a1a1a1;
   padding: 10px;
@@ -406,8 +418,10 @@ footer i {
     display: none;
   }
   .nav-home-xs {
-    display: block;
+    display: flex;
     position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     height: 100vh;
@@ -417,12 +431,6 @@ footer i {
     font-weight: 600;
     padding-bottom: 70px;
     text-align: center;
-  }
-  .nav-home-xs ul {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .nav-home-xs ul li {
     padding: 5px 0;
@@ -436,9 +444,10 @@ footer i {
   }
   /* UPGRADE SECTION */
   .upgrade {
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     height: 70px;
   }
+
   .install-app {
     padding: 0px;
   }
@@ -452,7 +461,7 @@ footer i {
 
   /* MAIN SECTION */
   main {
-    padding-left: 40px;
+    padding-left: 30px;
   }
   .wrapper-main {
     padding: 10px;
