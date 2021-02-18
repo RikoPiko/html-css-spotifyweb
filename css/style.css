@@ -82,86 +82,84 @@ footer i {
 }
 .nav-home {
   position: fixed;
-  display: flex;
-  flex-direction: column;
   top: 0;
   left: 0;
   width: 200px;
-  height: 100vh;
+  height: calc(100vh - 70px);
   background-color: black;
   font-size: 0.9rem;
   font-weight: 600;
-  padding-bottom: 70px;
 }
-
-/* Logo */
-.logo-container {
-  line-height: 80px;
-}
-#logo {
-  height: 35px;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-
-/* Home nav */
 .nav-home ul li {
-  margin-bottom: 10px;
-  padding-left: 10px;
-  line-height: 20px;
-  font-size: .7rem;
+  height: 30px;
+  line-height: 30px;
 }
 .nav-home ul li a {
-  vertical-align: middle;
+  display: inline-block;
+  font-size: .8rem;
 }
 
-.home ul li:first-child {
-  border-left: 3px solid white;
+/* NAV TOP */
+.nav-top {
+  width: 100%;
+  height: calc(100% - 70px);
 }
-.home ul li:first-child a {
-  color: #ccc;
+/* logo */
+.logo-container {
+  padding: 10px;
+  height: 70px;
+  line-height: 50px;
 }
-.home ul li:not(:first-child) {
-  border-left: 3px solid transparent;
-}
-.home ul img {
-  height: 20px;
+
+#logo {
   vertical-align: middle;
-  margin-right: 5px;
+  width: 70%;
 }
+
+/* home */
+.home {
+  padding: 10px;
+}
+.home img {
+  width: 20px;
+  vertical-align: middle;
+}
+/* playlist */
 .playlist {
-  flex-grow: 2;
+  padding: 10px;
+  height: 300px;
 }
-.playlist h4 {
-  margin-bottom: 10px;
-  padding-left: 13px;
-}
-
 .playlist ul {
-  height: 255px;
+  height: 95%;
   overflow: auto;
 }
-.playlist ul li div {
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  background-color: #aaa;
-  margin-right: 10px;
-  vertical-align: middle;
+.playlist li:first-child {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.playlist ul li a:hover div {
+.playlist li:first-child a::before {
+ content: '+';
+ float: left;
+ display: inline-block;
+ text-align: center;
+ height: 30px;
+ width: 30px;
+ background-color: #a1a1a1;
+ color: black;
+ margin-right: 15px;
+ font-size: 1.5rem;
+}
+.playlist li:first-child a:hover::before {
   background-color: white;
 }
-.playlist ul li div span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.7rem;
-  color: black;
+
+/* NAV BOTTOM */
+.nav-bottom {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  z-index: 1000;
 }
 
 /* Section Upgrade */
@@ -195,37 +193,7 @@ footer i {
   padding: 0.8em 1.6em;
 }
 
-/* Section installa app */
-.install-app {
-  width: 100%;
-  padding: 10px;
-  background-color: black;
-}
-.install {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #a1a1a1;
-  margin-bottom: 10px;
-  line-height: 15px;
-}
-.install i {
-  vertical-align: middle;
-}
-.install-app h5, .install-app h4 {
-  display: inline-block;
-  color: inherit;
-}
 
-.username {
-  line-height: 30px;
-}
-.username img {
-  width: 30px;
-  height: 30px;
-  background-color: #a1a1a1;
-  border-radius: 50%;
-  margin-right: 5px;
-  vertical-align: middle;
-}
 /* End home nav */
 
 
